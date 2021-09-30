@@ -44,6 +44,7 @@ class _LogInState extends State<LogIn> {
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               child: TextFormField(
+                controller: emailController,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                     fillColor: Colors.white,
@@ -61,6 +62,7 @@ class _LogInState extends State<LogIn> {
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               child: TextFormField(
+                controller: password,
                 decoration: InputDecoration(
                     fillColor: Colors.white,
                     contentPadding: EdgeInsets.only(left: 5),
@@ -72,7 +74,9 @@ class _LogInState extends State<LogIn> {
             Container(
               margin: EdgeInsets.all(20),
               child: ElevatedButton(
-                onPressed: () async {
+                onPressed: ()async {
+                  print(emailController.text);
+                  print(password.text);
                   try {
                     await FirebaseAuth.instance
                         .signInWithEmailAndPassword(
@@ -102,6 +106,8 @@ class _LogInState extends State<LogIn> {
                           fontSize: 16.0);
                       print('Wrong password provided for that user.');
                     }
+                  } catch (e) {
+                    print(e);
                   }
                 },
                 child: Text("Login"),

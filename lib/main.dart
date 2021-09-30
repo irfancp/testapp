@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:log_a_catch/screens/logIn.dart';
 import 'package:log_a_catch/screens/register.dart';
 
 void main() async {
@@ -52,7 +53,7 @@ class _AppState extends State<App> {
       theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
           fontFamily: 'Montserrat'),
-      home: Register(),
+      home: LogIn(),
     );
   }
 }
