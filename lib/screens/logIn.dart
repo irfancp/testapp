@@ -37,11 +37,11 @@ class _LogInState extends State<LogIn> {
             children: [
               Container(
                   margin:
-                      EdgeInsets.only(top: 50, left: 100, right: 100, bottom: 50),
+                      EdgeInsets.only(top: height/20, left: 100, right: 100, bottom: height/10),
                   child: Image.asset("images/appLogo.png")),
               Container(
-                height: 80,
-                margin: EdgeInsets.only(top: 30, left: 30, right: 30, bottom: 10),
+                height: 60,
+                margin: EdgeInsets.only(top: height/20, left: 30, right: 30, bottom: height/30),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -64,7 +64,7 @@ class _LogInState extends State<LogIn> {
                 ),
               ),
               Container(
-                height: 80,
+                height: 60,
                 margin: EdgeInsets.all(30),
                 decoration: BoxDecoration(
                   color: Colors.white,

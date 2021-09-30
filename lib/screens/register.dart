@@ -48,7 +48,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Container(
-                      height: 80,
+                      height: 60,
                       margin: EdgeInsets.only(
                         top: 30,
                         left: 30,
@@ -68,7 +68,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Container(
-                      height: 80,
+                      height: 60,
                       margin: EdgeInsets.only(
                         top: 30,
                         left: 30,
@@ -88,7 +88,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Container(
-                      height: 80,
+                      height: 60,
                       margin: EdgeInsets.only(
                         top: 30,
                         left: 30,
@@ -115,7 +115,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Container(
-                      height: 80,
+                      height: 60,
                       margin: EdgeInsets.only(top: 30, left: 30, right: 30),
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -138,7 +138,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Container(
-                      height: 80,
+                      height: 60,
                       margin: EdgeInsets.only(
                           top: 30, left: 30, right: 30, bottom: 5),
                       decoration: BoxDecoration(

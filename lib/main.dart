@@ -53,7 +53,7 @@ class _AppState extends State<App> {
       theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
           fontFamily: 'Montserrat'),
-      home: LogIn(),
+      home: Register(),
     );
   }
 }
