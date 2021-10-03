@@ -52,12 +52,17 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) { 
       
-                   Future.delayed(const Duration(seconds: 20), () {
+                   Future.delayed(const Duration(seconds: 10), () {
 
     customers = context.read<CustomerDetails>().getCustomers();
 
 });
-new Timer.periodic(const Duration(seconds: 20), (Timer t) => setState((){}));
+
+                   Future.delayed(const Duration(seconds: 12), () {
+
+    setState((){});
+
+});
     return Scaffold(
       body: FutureBuilder(
         future: customers,

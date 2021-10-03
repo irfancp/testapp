@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.log_a_catch">
+        <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="log_a_catch"
         android:icon="@mipmap/ic_launcher">
